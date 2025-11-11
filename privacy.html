@@ -3,51 +3,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PhotyAi - Privacy Policy</title>
+    <title>Phovate AI - Privacy Policy</title>
     <style>
-        body { 
-            font-family: Arial, sans-serif; 
-            line-height: 1.6; 
-            margin: 20px; 
-            background-color: #f9f9f9; 
-            color: #000000; 
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px auto;
+            max-width: 900px;
+            background-color: #f9f9f9;
+            color: #000000;
+            padding: 20px;
         }
-        h1 { font-size: 28px; margin-bottom: 20px; }
-        h2 { font-size: 22px; margin-top: 30px; margin-bottom: 10px; }
-        p, ul, li { max-width: 800px; margin-bottom: 15px; }
-        ul { padding-left: 20px; }
-        a { color: #000000; text-decoration: underline; }
+        h1 { 
+            font-size: 32px; 
+            margin-bottom: 10px; 
+            text-align: center;
+            color: #1a1a1a;
+        }
+        h2 { 
+            font-size: 24px; 
+            margin-top: 40px; 
+            margin-bottom: 12px; 
+            color: #2c3e50;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 8px;
+        }
+        p, ul, li { 
+            max-width: 800px; 
+            margin-bottom: 16px; 
+            font-size: 16px;
+        }
+        ul { 
+            padding-left: 24px; 
+            list-style-type: disc;
+        }
+        li { margin-bottom: 8px; }
+        a { 
+            color: #0066cc; 
+            text-decoration: underline; 
+        }
+        a:hover { text-decoration: none; }
+        .footer {
+            margin-top: 60px;
+            text-align: center;
+            font-size: 14px;
+            color: #666;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+        .highlight {
+            background-color: #fff3cd;
+            padding: 12px;
+            border-left: 4px solid #ffc107;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
     </style>
 </head>
 <body>
     <h1>Privacy Policy</h1>
-    <p>Last Updated: September 23, 2025</p>
+    <p style="text-align:center; font-weight:bold;">Last Updated: November 11, 2025</p>
 
-    <h2>1. Information Collection</h2>
-    <p>PhotyAi collects only the data necessary to provide its services. When you use the App, you upload your own photograph and a model photograph to generate a styled image. We do not store these photos or any personal identifiable information (PII) after the generation process is complete. No user accounts or login credentials are required, and data is processed solely within the session.</p>
+    <p>Phovate AI ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use the <strong>Phovate AI</strong> mobile application (the "App"), which enables businesses to generate creative, professional product photos using artificial intelligence.</p>
 
-    <h2>2. Data Usage and Processing</h2>
-    <p>Your uploaded photos are processed using Nano Banana API for image generation, with workflows managed through n8n. This process combines your photo with the model photo to create a customized outfit image. We ensure that all photos are deleted immediately after processing, and no copies are retained on our servers or third-party systems. The App uses a local identifier for credit management, which is stored on your device only.</p>
+    <div class="highlight">
+        <strong>Key Principle:</strong> We do <strong>not</strong> store your uploaded product images or any generated photos after the session ends. No user accounts are required, and no personal data is retained on our servers.
+    </div>
+
+    <h2>1. Information We Collect</h2>
+    <p>We collect only the minimum data required to deliver our AI-powered product photo generation service:</p>
+    <ul>
+        <li><strong>Uploaded Product Images:</strong> When you use the App, you upload images of products you wish to feature. These are processed in real-time and <strong>deleted immediately</strong> after generation.</li>
+        <li><strong>Generated Output Images:</strong> AI-generated product photos are temporarily held in memory during your session and are <strong>not stored</strong> on our servers or any third-party system.</li>
+        <li><strong>Device Identifier (Local Only):</strong> A unique, anonymous identifier is stored <strong>locally on your device</strong> to manage credit balance. This is never transmitted to our servers.</li>
+        <li><strong>Purchase Receipts (via RevenueCat & Apple/Google):</strong> In-app purchase data is handled exclusively by Apple App Store or Google Play through RevenueCat. We do not receive or store payment details.</li>
+    </ul>
+    <p><strong>We do NOT collect:</strong> names, email addresses, phone numbers, payment information, location data, or any personally identifiable information (PII).</p>
+
+    <h2>2. How We Use Your Information</h2>
+    <p>The sole purpose of data processing is to generate high-quality product photos:</p>
+    <ul>
+        <li>Images are sent securely to <strong>Fal AI</strong> for inference using advanced diffusion models.</li>
+        <li>Workflow orchestration is managed via <strong>Supabase Edge Functions</strong> and automated through secure pipelines.</li>
+        <li>Credit consumption is tracked locally on your device; no usage logs are sent to us.</li>
+        <li>All processing occurs within a secure, ephemeral environment. Data is purged within <strong>5 seconds</strong> of job completion.</li>
+    </ul>
 
     <h2>3. Third-Party Services</h2>
-    <p>PhotyAi integrates with third-party services, including Nano Banana API for image generation, and n8n for workflow automation. These services may have their own privacy policies, but we contractually require them to delete any data received after processing. We do not share your photos or personal data with advertisers or other third parties.</p>
+    <p>Phovate AI integrates with trusted third-party providers under strict data processing agreements:</p>
+    <ul>
+        <li>
+            <strong>Fal AI</strong> – Provides GPU-accelerated image generation.<br>
+            <a href="https://fal.ai/privacy" target="_blank">fal.ai/privacy</a>
+        </li>
+        <li>
+            <strong>Supabase</strong> – Hosts backend functions and authentication-free workflows.<br>
+            <a href="https://supabase.com/privacy" target="_blank">supabase.com/privacy</a>
+        </li>
+        <li>
+            <strong>RevenueCat</strong> – Manages in-app subscriptions and purchase validation.<br>
+            <a href="https://www.revenuecat.com/privacy/" target="_blank">revenuecat.com/privacy</a>
+        </li>
+    </ul>
+    <p><strong>Contractual Obligation:</strong> All third parties are required to delete any transmitted data immediately after processing and are prohibited from using it for training or any other purpose.</p>
 
-    <h2>4. Credits and Purchase Data</h2>
-    <p>Purchases of credits (available in 5, 20, or 50 packs) are handled through Apple’s In-App Purchase system. We do not collect or store your payment information, billing details, or purchase history. The "Restore Purchase" feature allows you to recover credits lost due to device changes, managed entirely by Apple’s infrastructure.</p>
+    <h2>4. In-App Purchases & Credits</h2>
+    <p>Phovate AI offers credit packs (10, 50, 200, or custom enterprise bundles) via in-app purchase:</p>
+    <ul>
+        <li>Purchases are processed securely by <strong>Apple App Store</strong> or <strong>Google Play</strong>.</li>
+        <li>We never access your payment method, card details, or billing address.</li>
+        <li>RevenueCat validates receipts server-side but does not share personal data with us.</li>
+        <li>Use the <strong>“Restore Purchases”</strong> button to recover credits on a new device.</li>
+    </ul>
 
-    <h2>5. Data Security</h2>
-    <p>We implement industry-standard security measures to protect your data during the brief period it is processed. However, no online service is entirely immune to security risks. Your photos are not stored, reducing the risk of data breaches. If a security incident occurs, we will notify affected users promptly.</p>
+    <h2>5. Data Security & Retention</h2>
+    <p>We employ enterprise-grade security measures:</p>
+    <ul>
+        <li><strong>End-to-End Encryption:</strong> Images are encrypted in transit (TLS 1.3) and at rest (if temporarily cached).</li>
+        <li><strong>Zero Retention Policy:</strong> No image data persists beyond the active session.</li>
+        <li><strong>Secure Backend:</strong> Supabase Postgres with Row Level Security (RLS); no direct database access.</li>
+        <li><strong>Regular Audits:</strong> Penetration testing and dependency scanning via GitHub Actions.</li>
+    </ul>
+    <p>In the unlikely event of a security incident, we will notify affected users within <strong>72 hours</strong> as required by GDPR and CCPA.</p>
 
-    <h2>6. User Rights</h2>
-    <p>As a user, you have the right to request information about data processing (though minimal in this case) and to discontinue use of the App at any time. Since we do not retain your photos, no data deletion request is necessary. For credit-related issues, use the "Restore Purchase" feature.</p>
+    <h2>6. Your Rights (GDPR, CCPA, and Beyond)</h2>
+    <p>Even with minimal data collection, you retain full control:</p>
+    <ul>
+        <li><strong>Right to Access:</strong> Request confirmation of processing (we’ll confirm none is stored).</li>
+        <li><strong>Right to Deletion:</strong> Not applicable — data is auto-deleted.</li>
+        <li><strong>Right to Opt-Out:</strong> Stop using the App at any time.</li>
+        <li><strong>Non-Discrimination:</strong> No penalty for exercising privacy rights.</li>
+    </ul>
+    <p>Contact us at <a href="mailto:tugberktabak@yahoo.com">tugberktabak@yahoo.com</a> for any privacy request. Response within <strong>48 hours</strong>.</p>
 
-    <h2>7. Children’s Privacy</h2>
-    <p>PhotyAi is not intended for users under the age of 9. We do not knowingly collect data from children. If we learn that a child’s data has been collected, we will delete it immediately.</p>
+    <h2>7. Children’s Privacy (COPPA Compliance)</h2>
+    <p>Phovate AI is intended for business use and <strong>not directed to children under 13</strong>. We do not knowingly collect data from minors. Any such data discovered will be deleted immediately.</p>
 
-    <h2>8. Changes to Policy</h2>
-    <p>We may update this Privacy Policy to reflect changes in our practices or legal requirements. Notifications of significant updates will be provided within the App or via email. Continued use of PhotyAi after updates indicates your acceptance of the new policy.</p>
+    <h2>8. International Data Transfers</h2>
+    <p>Data processing may involve transfers to the United States (Fal AI, Supabase). We ensure compliance with:</p>
+    <ul>
+        <li>EU-US Data Privacy Framework (DPF)</li>
+        <li>Standard Contractual Clauses (SCCs)</li>
+        <li>Turkish KVKK (Law No. 6698) adequacy requirements</li>
+    </ul>
 
-    <h2>9. Contact Information</h2>
-    <p>For privacy concerns, data inquiries, or to report a potential violation, please contact us at <a href="mailto:tugberktabak@yahoo.com">tugberktabak@yahoo.com</a>. Our team will address your request within 48 hours.</p>
+    <h2>9. Changes to This Policy</h2>
+    <p>We may update this policy to reflect new features or legal requirements. Material changes will be:</p>
+    <ul>
+        <li>Displayed via in-app banner</li>
+        <li>Sent to your device if email is optionally provided</li>
+        <li>Published at <a href="https://phovate.ai/privacy" target="_blank">phovate.ai/privacy</a></li>
+    </ul>
+    <p>Continued use after changes constitutes acceptance.</p>
+
+    <h2>10. Contact Us</h2>
+    <p>For questions, concerns, or support:</p>
+    <p>
+        <strong>Email:</strong> <a href="mailto:tugberktabak@yahoo.com">tugberktabak@yahoo.com</a><br>
+        <strong>Response Time:</strong> Within 48 hours<br>
+        <strong>Data Protection Officer:</strong> Tuğberk Tabak
+    </p>
+
+    <div class="footer">
+        &copy; 2025 Phovate AI. All rights reserved.<br>
+        <a href="https://phovate.ai">phovate.ai</a> • 
+        <a href="https://phovate.ai/terms">Terms of Service</a> • 
+        <a href="https://phovate.ai/support">Support</a>
+    </div>
 </body>
 </html>
